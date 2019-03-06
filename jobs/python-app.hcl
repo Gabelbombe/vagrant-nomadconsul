@@ -32,7 +32,7 @@ job "python-app" {
 
       # Defines the source of the artifact which should be downloaded
       artifact {
-        source = "https://github.com/tomiloza/nomad-consul-demo/raw/master/apps/python/app.tgz"
+        source = "https://github.com/ehime/vagrant-nomadconsul/raw/master/apps/python/app.tgz"
       }
 
       # The service block tells Nomad how to register this service with Consul for service discovery and monitoring.

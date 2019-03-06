@@ -25,7 +25,7 @@ job "java-app" {
       }
 
       artifact {
-        source = "https://github.com/tomiloza/nomad-consul-demo/raw/master/apps/java/java-app/deploy/java-app-1.0.jar"
+        source = "https://github.com/ehime/vagrant-nomadconsul/raw/master/apps/java/java-app/deploy/java-app-1.0.jar"
       }
 
       service {
