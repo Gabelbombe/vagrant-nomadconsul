@@ -7,14 +7,14 @@ Necessary docker and java drivers which are used for the Nomad jobs are also pre
 - Vagrant >= 1.9.1
 
 ### Setup:
-```
+```bash
 cd nomad-consul-demo
 vagrant up
 vagrant provision
 ```
 
 ### SSH into a virtual machine
-```
+```bash
 vagrant ssh
 ```
 
@@ -22,9 +22,10 @@ vagrant ssh
 
 Currently the demo vagrant box contains these directories:
 
-- ```ansible```, this directory contains the ansbile roles which are used for the pre-provisioning of the VM
-- ```apps```, contains the demo applications. Java and Python hello world apps
-- ```jobs```, contains the python, java and docker nomad job definitions. Additionally the [hashi-ui](https://github.com/jippi/hashi-ui) job is defined for setup of the nomad-ui.
+- **ansible**, this directory contains the ansbile roles which are used for the pre-provisioning of the VM
+- **apps**, contains the demo applications. Java and Python hello world apps
+- **jobs**, contains the python, java and docker nomad job definitions. Additionally the [hashi-ui](https://github.com/jippi/hashi-ui) job is defined for setup of the nomad-ui.
+
 The jobs definitions are written in the [hcl](https://github.com/hashicorp/hcl) language.
 
 ## Nomad and Consul UI-s
