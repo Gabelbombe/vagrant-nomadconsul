@@ -8,7 +8,7 @@ Necessary docker and java drivers which are used for the Nomad jobs are also pre
 
 ### Setup:
 ```bash
-cd nomad-consul-demo
+cd vagrant-nomadconsul
 vagrant up
 vagrant provision
 ```
