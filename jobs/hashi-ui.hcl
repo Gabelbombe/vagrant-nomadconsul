@@ -1,7 +1,9 @@
 job "hashi-ui" {
   region = "global"
   datacenters = [
-    "dc1"]
+    "dc1"
+  ]
+
   type = "service"
 
   group "server" {

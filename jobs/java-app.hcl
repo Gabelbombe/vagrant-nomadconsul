@@ -1,7 +1,9 @@
 job "java-app" {
   region = "global"
   datacenters = [
-    "dc1"]
+    "dc1"
+  ]
+
   type = "service"
 
   group "server" {
@@ -18,10 +20,13 @@ job "java-app" {
       config {
         jar_path = "local/java-app-1.0.jar"
         args = [
-          "server"]
+          "server"
+        ]
+
         jvm_options = [
           "-Xmx256m",
-          "-Xms256m"]
+          "-Xms256m"
+        ]
       }
 
       artifact {

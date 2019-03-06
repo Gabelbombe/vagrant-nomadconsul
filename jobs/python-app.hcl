@@ -4,7 +4,8 @@ job "python-app" {
 
   # Specify this job should run in datacenter dc1
   datacenters = [
-    "dc1"]
+    "dc1"
+  ]
 
   # Run this job as a "service" type. Each job type has different properties
   type = "service"
@@ -27,7 +28,8 @@ job "python-app" {
       config {
         command = "/bin/sh"
         args = [
-          "/local/install_run.sh"]
+          "/local/install_run.sh"
+        ]
       }
 
       # Defines the source of the artifact which should be downloaded
@@ -42,7 +44,8 @@ job "python-app" {
 
         tags = [
           "python",
-          "app"]
+          "app"
+        ]
 
         check {
           type = "http"

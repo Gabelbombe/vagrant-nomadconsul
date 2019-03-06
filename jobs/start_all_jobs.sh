@@ -2,11 +2,14 @@
 
 export NOMAD_ADDR=
 
-echo "Starting hashi-ui"
+echo -e  "Starting hashi-ui"
 nomad run /vagrant/jobs/hashi-ui.hcl
-echo "Starting docker-app"
+
+echo -e  "Starting docker-app"
 nomad run /vagrant/jobs/docker-app.hcl
-echo "Starting java-app"
+
+echo -e  "Starting java-app"
 nomad run /vagrant/jobs/java-app.hcl
-echo "Starting python-app"
+
+echo -e  "Starting python-app"
 nomad run /vagrant/jobs/python-app.hcl
